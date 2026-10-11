@@ -1,0 +1,117 @@
+.abrazo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.abrazo__trigger {
+  height: auto;
+  width: auto;
+  border-radius: 0;
+  border: none;
+  background: none;
+  bottom: auto;
+  cursor: pointer;
+  padding: 0;
+  position: static;
+  font-size: inherit;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.abrazo__trigger:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.abrazo__trigger img {
+  height: 80px;
+}
+
+.abrazo__card {
+  font-family: 'Comic Neue', cursive;
+  background-color: bisque;
+  color: #000;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  max-width: 340px;
+  text-align: center;
+}
+
+.abrazo__card h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.abrazo__card img {
+  height: 150px;
+}
+
+.abrazo__message {
+  font-size: 25px;
+  min-height: 1.2em;
+  margin: 0;
+}
+
+.abrazo__cargando {
+  font-size: 25px;
+  margin: 0;
+}
+
+.abrazo__bar {
+  height: 20px;
+  width: 160px;
+  border: 3px solid black;
+  overflow: hidden;
+}
+
+.abrazo__fill {
+  height: 100%;
+  width: 0;
+  background-color: #555ba3;
+}
+
+.abrazo__fill.is-loading {
+  animation: abrazo-loading 2s ease forwards;
+}
+
+.abrazo__fill.is-done {
+  width: 160px;
+}
+
+@keyframes abrazo-loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 160px;
+  }
+}
+
+.abrazo__chat {
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+.abrazo__link {
+  font-size: 1.2rem;
+  padding: 10px;
+  color: rgb(37, 37, 37);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.abrazo__link:hover {
+  text-decoration: underline;
+}
