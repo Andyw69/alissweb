@@ -1,4 +1,5 @@
 import type { CSSProperties, FC } from 'react'
+import FlowersGarden from './FlowersGarden'
 
 const LordIcon = 'lord-icon' as unknown as FC<{
   src: string
@@ -33,8 +34,9 @@ export function ArticleSection() {
           />
         </a>
       </div>
-      <br />
-      <div className="copy">Lorem ipsum dolor sit amet.</div>
+      <div className="copy">
+        <FlowersGarden />
+      </div>
     </article>
   )
 }

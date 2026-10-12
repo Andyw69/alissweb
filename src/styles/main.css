@@ -135,12 +135,18 @@ button p {
 	color: whitesmoke;
 }
 
+.main-article__content {
+	position: relative;
+	z-index: 2;
+}
+
 .copy {
 	position: absolute;
 	bottom: calc(var(--index) * 2.5);
-	opacity: .45;
-	font-size: calc(var(--index) * .75);
-	letter-spacing: calc(var(--index) / 37.5);
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	pointer-events: none;
 }
 
 /* Modal */
